@@ -1,0 +1,30 @@
+<p>form-comp works!</p>
+
+
+<div>
+  
+    <form  action="">
+        <ng-container *ngFor=" let ele of dataArray">
+            <h3>{{ele.title}}</h3>
+
+        <ng-container  *ngFor=" let item of type">   
+            <!-- <label for="">{{item.label}}</label> -->
+             <!-- <input type="{{item.type}}" name="" id=""> -->
+        <select>
+            <option >select</option>
+            <!-- formControlName="{{option.value}}" -->
+               <!-- <option  *ngFor=" let option of item.options" value="{{option.value}}"  >{{option.value}}</option> -->
+        <!-- <ng-container *ngFor=" let option of item.options">   
+         
+            <option  formControlName="{{option.value}}"  value="{{option.value}}">{{option.value}}</option>
+        </ng-container>   -->
+
+ <option  *ngFor=" let option of item.options" value="{{option.value}}"  >{{option.value}}</option>
+        </select>
+            </ng-container>
+
+        </ng-container>
+
+        <input class="submit-btn" type="submit">
+    </form>
+</div>
